@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1712317818 source:z:\home\user01\programming archives\c\exercícios\exercicios-do-livro-algoritmos-manzano\exercicios\calculofatorial.c
+	<stdio.h>
+	<stdlib.h>
+
