@@ -22,7 +22,7 @@ int main(){
         soma += n1;
     }
     if(n1 < 6){
-        n1 = n1 * 2,5;
+        n1 = n1 * 2.5;
         soma += n1;
     }else{
         soma += n1;
@@ -39,7 +39,7 @@ int main(){
         soma += n2;
     }
     if(n2 < 6){
-        n2 = n2 * 2,5;
+        n2 = n2 * 2.5;
         soma += n2;
     }else{
         soma += n2;
@@ -56,7 +56,7 @@ int main(){
         soma += n3;
     }
     if(n3 < 6){
-        n3 = n3 * 2,5;
+        n3 = n3 * 2.5;
         soma += n3;
     }else{
         soma += n3;
