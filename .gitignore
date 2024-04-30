@@ -1,58 +1,75 @@
 .vscode
 
-*.cbp
-*.depend
-*.layout
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-calculoTabuada/bin
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-calculoTabuada/obj
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-calculoTabuada/.cbp
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-calculoTabuada/.depend
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-calculoTabuada/.layout
 
-# Prerequisites
-*.d
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-Maior-Menor/bin
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-Maior-Menor/obj
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-Maior-Menor/.cbp
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-Maior-Menor/.depend
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-Maior-Menor/.layout
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-area-total/bin
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-area-total/obj
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-area-total/.cbp
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-area-total/.depend
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-area-total/.layout
 
-# Linker output
-*.ilk
-*.map
-*.exp
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-fahrenheit-10to10/bin
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-fahrenheit-10to10/obj
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-fahrenheit-10to10/.cbp
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-fahrenheit-10to10/.depend
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-fahrenheit-10to10/.layout
 
-# Precompiled Headers
-*.gch
-*.pch
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-fatorial-15-numbers/bin
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-fatorial-15-numbers/obj
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-fatorial-15-numbers/.cbp
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-fatorial-15-numbers/.depend
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-fatorial-15-numbers/.layout
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-fibonacci-01/bin
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-fibonacci-01/obj
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-fibonacci-01/.cbp
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-fibonacci-01/.depend
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-fibonacci-01/.layout
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-somaMediaTotal/bin
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-somaMediaTotal/obj
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-somaMediaTotal/.cbp
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-somaMediaTotal/.depend
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-somaMediaTotal/.layout
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-vetor-01/bin
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-vetor-01/obj
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-vetor-01/.cbp
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-vetor-01/.depend
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-vetor-01/.layout
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-vetor-02/bin
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-vetor-02/obj
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-vetor-02/.cbp
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-vetor-02/.depend
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-vetor-02/.layout
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-vetor-03/bin
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-vetor-03/obj
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-vetor-03/.cbp
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-vetor-03/.depend
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-vetor-03/.layout
+
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-calculoFatorial/bin
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-calculoFatorial/obj
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-calculoFatorial/.cbp
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-calculoFatorial/.depend
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-calculoFatorial/.layout
+
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-val-numerical/bin
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-val-numerical/obj
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-val-numerical/.cbp
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-val-numerical/.depend
+Exercícios/Exercicios-Do-Livro-Algoritmos-Manzano/exerc-val-numerical/.layout
+
+prova/output
