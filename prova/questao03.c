@@ -8,6 +8,11 @@ int main()
     printf("Digite um numero: ");
     scanf("%d", &num);
 
+    while (num < 0){
+        printf("\nNao e possivel calcular o fatorial de um numero negativo, digite novamente: ");
+        scanf("%d", num);
+    }
+    
     for(int i = 1;i <= num;){
         valorFinal = valorFinal * i;
         i++;
