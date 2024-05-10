@@ -12,6 +12,11 @@ int main()
     printf("\nDigite o numero em decimal a ser convertido em binario: ");
     scanf("%d", &valor);
 
+    while(valor < 0){
+        printf("\nIncorreto, digite novamente: ");
+        scanf("%d", &valor);
+    }
+
     while(valor != 0){              //durante o ciclo de divisao o resto sera 0, fazendo com que o looping finalize
 
         resto = valor % divi;

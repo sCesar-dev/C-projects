@@ -11,10 +11,21 @@ int main()
     printf("\nDigite o numero de algarismos do binario: ");
     scanf("%d", &valor);
 
+    while(valor < 0){
+        printf("\nIncorreto, digite novamente: ");
+        scanf("%d", &valor);
+    }
+
     for(int i = 0; i < valor; i++){
         printf("\nDigite o algarismo(1 ou 0): ");
         scanf("%f", &binario[i]);
+
+        while(binario[i] < 0 || binario[i] > 1){
+            printf("\nIncorreto, digite novamente: ");
+            scanf("%f", &binario[i]);
+        }
     }
+
 
     for(int i = 0; i < valor; i++){
         if(binario[i] == 1){
