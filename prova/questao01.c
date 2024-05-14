@@ -16,16 +16,23 @@ int main(){
     while(n1 < 0 || n1 > 10){
         printf("\nNúmero inválido, digite novamente: ");
         scanf("%f", &n1);
+
     }
+
     if(n1 > 6){
         n1 = n1 * 5;
         soma += n1;
-    }
-    if(n1 < 6){
-        n1 = n1 * 2.5;
-        soma += n1;
+
     }else{
-        soma += n1;
+        if(n1 < 6){
+            n1 = n1 * 2.5;
+            soma += n1;
+
+        }else{
+            n1 = n1 * 3.5;
+            soma += n1;
+
+        }
     }
 
     printf("\nDigite o segundo valor: ");
@@ -33,16 +40,23 @@ int main(){
     while(n2 < 0 || n2 > 10){
         printf("\nNúmero inválido, digite novamente: ");
         scanf("%f", &n2);
+
     }
+
     if(n2 > 6){
         n2 = n2 * 5;
         soma += n2;
-    }
-    if(n2 < 6){
-        n2 = n2 * 2.5;
-        soma += n2;
+
     }else{
-        soma += n2;
+        if(n2 < 6){
+            n2 = n2 * 2.5;
+            soma += n2;
+
+        }else{
+            n2 = n2 * 3.5;
+            soma += n2;
+
+        }
     }
 
     printf("\nDigite o terceiro valor: ");
@@ -51,18 +65,24 @@ int main(){
         printf("\nNúmero inválido, digite novamente: ");
         scanf("%f", &n3);
     }
+    
     if(n3 > 6){
         n3 = n3 * 5;
         soma += n3;
-    }
-    if(n3 < 6){
-        n3 = n3 * 2.5;
-        soma += n3;
+
     }else{
-        soma += n3;
+        if(n1 < 6){
+            n3 = n3 * 2.5;
+            soma += n1;
+
+        }else{
+            n3 = n3 * 3.5;
+            soma += n3;
+
+        }
     }
 
     media = soma / 3;
-    printf("\nMédia ponderada dos 3 valores : %f", media);
+    printf("\nMédia ponderada dos 3 valores : %.2f", media);
 
 }
