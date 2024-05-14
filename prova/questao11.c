@@ -19,7 +19,7 @@ int main(){
     for(i = 0; i < tot_rep; i++){
         if(algarismo[i] != algarismo[tot_rep-i-1]){                 //vai comparar o algarismo 0 e o total selecionado pelo user,
             printf("\nNão é um palíndromo. \n%d \n%d", tot_rep, i); //subtraido por 1(ja que o primeiro termo é 0, não 1, fazendo ,
-            break;                                                  //com que o ultimo seja -1)
+            break;                                                  //com que o ultimo seja -1(ex: 4 será {0,1,2,3})
         }else{
             if(i == tot_rep-i-1){
                 printf("\nE um palíndromo");
