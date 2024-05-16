@@ -23,7 +23,7 @@ int main(){
         printf("%lf", altura);
         while(altura < 0.5 && altura > 2.5){
             printf("\nAltura incorreta. Digite novamente (entre 0.5 e 2.5 metros): ");
-            scanf("%lf", altura);
+            scanf("%lf", &altura);
         }
 
         fflush(stdin); //Limpar o buffer do teclado antes de receber o char para a linha 20 nao sair no prox scanf
