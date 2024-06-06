@@ -8,6 +8,9 @@ int main(){
     char op;
     
     cont = 0;
+    repetidor = 0;
+    cont_max = 0;
+    numero_max = 0;
 
     printf("Informe o primeiro numero da sequencia: ");
     scanf("%d", &numero);
@@ -22,9 +25,11 @@ int main(){
                 numero_max = numero;
                 cont++;
             }
-            if (numero < numero_max && cont_max <= numero_max){                      //com numero menor que o maximo crescente, o contador encerra e adiciona o cont somado ao cont_max
+            if (numero < numero_max && cont_max <= cont){                      //com numero menor que o maximo crescente, o contador encerra e adiciona o cont somado ao cont_max
                 cont_max = cont;
                 cont = 0;                                                     //na mesma condicional ele verifica se esse cont somado é maior que o cont já registrado(cont_max)
+                numero = 0;
+                numero_max = 0;
             }                                                                        //Isso foi feito pois mesmo com o numero crescente o usuario podera criar outro seguimento(afinal, o codigo so encerra com o NAO dele),
         }                                                                            //Assim, resumindo, o numero max que vai sinalizar o segmento crescente de comprimento maximo
         
@@ -44,6 +49,6 @@ int main(){
         printf("Com apenas um ponto, nao possui seguimento crescente de comprimento maximo.");
     }
 
-    printf("Comprimento do segmento crescente de comprimento máximo: %d", cont_max-1);
+    printf("Comprimento do segmento crescente de comprimento máximo: %d", cont_max);
     
 }
