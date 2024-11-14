@@ -2,27 +2,23 @@
 #include <stdlib.h>
 
 void verificaString(char * arr1, char * arr2){
-    int i = 0, j = 0;
-    while ((*arr2+i) != '\0'){
-        
-        while ((*arr1+j) != '\0'){
-
-            if(*arr2+i == *arr1+j){
+    while ((*arr2) != '\0'){
+        while ((*arr1) != '\0'){
+            if(*arr2 == *arr1){
                 *arr2++;
                 break;
             }else{
                 *arr1++;
             }
         }
-        if ((*arr1+j) == '\0') {
+        if ((*arr1) == '\0') {
             printf("false");
             break;
         }
     }
-    if((*arr2+i) == '\0'){
+    if((*arr2) == '\0'){
         printf("true");
     }
-    
 }
 
 int main(void){
