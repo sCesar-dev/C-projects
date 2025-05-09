@@ -22,7 +22,7 @@ char getch()
 
 void ListaDupla::editarPalavra(std::string palavra)
 {
-    std::cout << "Digite a palavra a editar: " << palavra << std::endl;
+    std::cout << "Palavra editada: " << palavra << std::endl;
     atual->info = palavra;
 }
 
@@ -58,20 +58,54 @@ void ListaDupla::eliminarPalavra(std::string palavra)
     aux = inicio;
     do
     {
+
         if(aux->info == palavra)
         {
             delete aux;
-            if(inicio == nullptr){
-                std::cout << "Lista vazia!!" << std::endl;
+            if(inicio->prox == nullptr){
+                std::cout << "Palavra apagada, lista vazia!!" << std::endl;
                 break;
             }
+            atual->prox->ant = atual->ant;
+            atual->ant->prox = atual->prox;
+            break;
+        }
+        if(aux->ant->info == palavra)
+        {
+            aux = aux->ant;
+            delete aux;
+            atual->prox->ant = atual->ant;
+            atual->ant->prox = atual->prox;
         }
         aux = aux->prox;
+        atual = aux;
     } while (aux->prox != inicio);
-    if(aux->prox = inicio)
+}
+
+void ListaDupla::palavraAnterior()
+{
+    if (atual->ant != nullptr)
     {
-        aux->prox->ant = inicio;
+        atual = atual->ant;
+        std::cout << "Retornou para a palavra: " << atual->info << std::endl;
+    } else{
+        std::cout << "Lista vazia!!" << std::endl;
     }
+}
+
+void ListaDupla::palavraPosterior()
+{
+    if (atual->prox != nullptr)
+    {
+        atual = atual->prox;
+        std::cout << "Retornou para a palavra: " << atual->info << std::endl;
+    } else{
+        std::cout << "Lista vazia!!" << std::endl;
+    }
+}
+
+void ListaDupla::sair()
+{
 }
 
 int main()
@@ -89,7 +123,9 @@ int main()
         {
 
         case 'E':
-            editarPalavra();
+            std::cout << "Digite a nova palavra: " << std::endl;
+            std::cin >> palavra;
+            editorTexto.editarPalavra(palavra);
             break;
 
         case 'D':
@@ -98,21 +134,23 @@ int main()
             editorTexto.inserirPalavra(palavra);
             break;
 
-        // case 'S':
-        //     eliminarPalavra();
-        //     break;
+        case 'S':
+            std::cout << "Digite a palavra a ser excluida" << std::endl;
+            std::cin >> palavra;
+            editorTexto.eliminarPalavra(palavra);
+            break;
 
-        // case /*Inserir seta*/ '<':
-        //     palavraAnterior();
-        //     break;
+        case '<':
+            editorTexto.palavraAnterior();
+            break;
 
-        // case /*Inserir seta*/ '<':
-        //     palavraPosterior();
-        //     break;
+        case '>':
+            editorTexto.palavraPosterior();
+            break;
 
-        // case 'X':
-        //     sair();
-        //     break;
+        case 'X':
+            editorTexto.sair();
+            return 0;
         }
     }
 }
