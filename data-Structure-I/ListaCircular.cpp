@@ -20,10 +20,24 @@ char getch()
 }
 #endif
 
+void ListaDupla::imprimeLista()
+{
+    atual = inicio;                                                                // Passa a ref de atual para o começo da lista
+    std::cout << "Palavra atual: " << std::endl;
+    do
+    {
+        std::cout << atual->info << std::endl;
+        atual = atual->prox;
+    } while (atual != inicio);
+
+    std::cout << "A palavra atual é a inicial!" << std::endl;
+}
+
 void ListaDupla::editarPalavra(std::string palavra)
 {
     std::cout << "Palavra editada: " << palavra << std::endl;
     atual->info = palavra;
+    imprimeLista();
 }
 
 void ListaDupla::inserirPalavra(std::string palavra)
@@ -51,35 +65,38 @@ void ListaDupla::inserirPalavra(std::string palavra)
         inicio->ant = novo;
         atual = novo;
     }
+
+    imprimeLista();
 }
 
 void ListaDupla::eliminarPalavra(std::string palavra)
 {
     aux = inicio;
+
     do
     {
-
         if(aux->info == palavra)
         {
             delete aux;
-            if(inicio->prox == nullptr){
-                std::cout << "Palavra apagada, lista vazia!!" << std::endl;
-                break;
-            }
-            atual->prox->ant = atual->ant;
-            atual->ant->prox = atual->prox;
-            break;
-        }
-        if(aux->ant->info == palavra)
-        {
-            aux = aux->ant;
-            delete aux;
+            std::cout << "Palavra apagada, lista vazia!!" << std::endl;
             atual->prox->ant = atual->ant;
             atual->ant->prox = atual->prox;
         }
         aux = aux->prox;
         atual = aux;
-    } while (aux->prox != inicio);
+        if(atual == nullptr)
+        {
+            std::cout << "Palavra apagada, lista vazia!!" << std::endl;
+            atual = inicio;                                                     // Fix: Quando ele insere, apaga e insere novamente, nao da segmentation fault.
+            break;
+        }
+    } while (aux != inicio);
+    if(aux != nullptr)
+    {
+        std::cout << "A palavra não existe na lista!" << std::endl;
+    }
+
+    imprimeLista();
 }
 
 void ListaDupla::palavraAnterior()
@@ -87,6 +104,7 @@ void ListaDupla::palavraAnterior()
     if (atual->ant != nullptr)
     {
         atual = atual->ant;
+
         std::cout << "Retornou para a palavra: " << atual->info << std::endl;
     } else{
         std::cout << "Lista vazia!!" << std::endl;
@@ -113,10 +131,11 @@ int main()
     ListaDupla editorTexto;
     char tecla;
     std::string palavra;
-    std::cout << "Selecione uma opção: " << std::endl;
 
     while (true)
     {
+        std::cout << "Selecione uma opção: " << std::endl;
+
         tecla = getch();
 
         switch (tecla)

@@ -18,7 +18,8 @@ public:
         inicio = nullptr;
         atual = nullptr;
     }
-
+    
+    void imprimeLista();
     void editarPalavra(std::string palavra);
     void inserirPalavra(std::string palavra);
     void eliminarPalavra(std::string palavra);
