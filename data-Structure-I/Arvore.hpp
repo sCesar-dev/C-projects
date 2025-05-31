@@ -13,5 +13,5 @@ public:
     void inserirIterativo(Node * raiz, int n);
     void emOrdem(Node * raiz);
     void inserirPublico(int n);
-    void emOrdemPublico();1
+    void emOrdemPublico();
 };
