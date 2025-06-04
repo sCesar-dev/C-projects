@@ -60,6 +60,19 @@ void Arvore::emOrdemPublico(){
     emOrdem(this->raiz);
 }
 
+bool Arvore::verificaSubArvore(Node * raiz){
+    if(raiz == nullptr)
+        return 0;
+    if((raiz->esq == nullptr && raiz->dir == nullptr) || (raiz->esq != nullptr && raiz->dir != nullptr)){
+        return (verificaSubArvore(raiz->esq) + verificaSubArvore(raiz->dir));
+    }else
+        return 1;
+    
+}
+
+bool Arvore::verificaSubArvorePublico(){
+    verificaSubArvore(this->raiz);
+}
 
 int main(){
     Arvore ar;
@@ -72,4 +85,5 @@ int main(){
     ar.inserirPublico(10);
     ar.inserirPublico(15);
     ar.emOrdemPublico();
+    ar.verificaSubArvorePublico();
 }
