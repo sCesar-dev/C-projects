@@ -5,6 +5,7 @@ struct Node{
     struct Node * esq, * dir;
 };
 
+
 class Arvore{
 public:
     Arvore();
@@ -14,4 +15,6 @@ public:
     void emOrdem(Node * raiz);
     void inserirPublico(int n);
     void emOrdemPublico();
+    bool verificaSubArvore(Node * raiz);
+    bool verificaSubArvorePublico();
 };
